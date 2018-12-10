@@ -1,0 +1,124 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+/* OpenDaylight odl */
+/* https://upload.wikimedia.org/wikipedia/commons/4/4b/OpenDaylight_logo.png */
+.App.odl > header .app-logo {
+  background-image: url('/images/logo_opendaylight-dark.gif');
+  background-size: 187px 49px;
+  height: 49px;
+  width: 187px;
+}
+
+.App.odl > header {
+  background: #393939;
+  color: white;
+  border-bottom: #F04F23 solid 5px;
+}
+
+.App.odl > footer {
+  background: #393939;
+  color: white;
+}
+
+.App.odl > main {
+  background-color: white;
+  color: #393939;
+} 
+
+.App.odl > main > article, section {
+  background-color: white;
+  color: #393939;
+} 
+
+.App.odl > main > nav {
+  background: #393939;
+  color: white;
+}
+
+.App.odl.light > main > nav a {
+  color: #ffffff;
+}
+
+.App.odl.light > main > nav a:link {
+  background: #393939;
+  color: #eeeeee;
+}
+
+.App.odl.light > main > nav a:visited {
+  background: #393939;
+  color: #aaaaaa;
+}
+
+.App.odl.light > main > nav a:hover {
+  background: #ffffff;
+  color: #393939;
+}
+
+.App.odl.light > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+.App.odl.dark > main > article, section {
+  background-color: #393939;
+  color: white;
+} 
+
+.App.odl.dark > main > nav a {
+  color: #eeeeee;
+}
+
+.App.odl.dark > main > nav a:link {
+  color: #eeeeee;
+}
+
+.App.odl.dark > main > nav a:visited {
+  color: #dddddd;
+}
+
+.App.odl.dark > main > nav a:hover {
+  background: #eeeeee;
+  color: #111111;
+}
+
+.App.odl.dark > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+.App.odl.light .md-radio input[type="radio"]:checked + label:before {
+  border-color: #F04F23;
+  animation: ripple 0.2s linear forwards;
+}
+.App.odl.light .md-radio label:after {
+  background: #F04F23;
+}
+.App.odl.light .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #F04F23;
+}
+
+.App.odl.dark .md-radio input[type="radio"]:checked + label:before {
+  border-color: #F04F23;
+  animation: ripple-dark 0.2s linear forwards;
+}
+.App.odl.dark .md-radio label:after {
+  background: #F04F23;
+}
+
+.App.odl.dark .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #F04F23;
+}
+

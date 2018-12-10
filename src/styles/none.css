@@ -1,0 +1,116 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+/* none */
+.App .border-left {
+  border-left: #000000 1px solid;
+  padding-left: 20px;
+}
+
+.App.dark {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.App.dark .border-left {
+  border-left: #eeeeee 1px solid;
+  padding-left: 20px;
+}
+
+
+.App.dark > header {
+  background-color: #111111;
+  border-bottom: #eeeeee solid 5px;
+  color: #eeeeee;
+}
+
+.App.dark > footer {
+  background: #111111;
+  color: #eeeeee;
+}
+
+.App.dark > main {
+  background: #111111;
+  color: #eeeeee;
+}
+
+.App.dark > main > nav a {
+  color: #eeeeee;
+}
+
+.App.dark > main > nav a:link {
+  color: #eeeeee;
+}
+
+.App.dark > main > nav a:visited {
+  color: #dddddd;
+}
+
+.App.dark > main > nav a:hover {
+  background: #eeeeee;
+  color: #111111;
+}
+
+.App.dark > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+@keyframes ripple-dark  {
+  0% {
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.0);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0);
+  }
+}
+.App.dark .md-radio input[type="radio"]:checked + label:before {
+  border-color: #337ab7;
+  animation: ripple-dark 0.2s linear forwards;
+}
+.App.dark .md-radio label:before {
+  border: 2px solid rgba(255, 255, 255, 0.54);
+}
+.App.dark .md-radio label:after {
+  background: #337ab7;
+}
+
+/* CHECKBOXES */
+.App.dark .md-checkbox label:before {
+  background: rgba(64, 64, 64, 0);
+  border: 2px solid rgba(255, 255, 255, 0.54);
+}
+.App.dark .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #337ab7;
+  border: none;
+}
+.App.dark .md-checkbox input[type="checkbox"]:checked + label:after {
+  border: 0.125em solid #000000;
+}
+.App.dark .md-checkbox input[type="checkbox"]:checked + label:after {
+  border: 0.125em solid #111111;
+  border-top-style: none;
+  border-right-style: none;
+}
+.App.dark .md-checkbox input[type="checkbox"]:disabled + label:before {
+  border-color: rgba(255, 255, 255, 0.26);
+}
+.App.dark .md-checkbox input[type="checkbox"]:disabled:checked + label:before {
+  background: rgba(255, 255, 255, 0.26);
+}

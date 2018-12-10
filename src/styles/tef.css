@@ -1,0 +1,148 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+/* Open Network Automation Plattform onap */
+.App.tef h1, .App.tef h2, .App.tef h3  {
+  color: rgba(47, 79, 90, 1);
+}
+
+.App.tef > header .app-logo {
+  background-image: url('https://www.telefonica.de/file/public/458/Telefonica-Logo_300dpi.jpg?attachment=1');
+  background-size: 176px 49px;
+  height: 49px;
+  width: 176px;
+}
+
+.App.tef > header {
+  background: white;
+  color: rgba(47, 79, 90, 1);
+  border-bottom: rgba(47, 79, 90, 1) solid 1px;
+}
+
+.App.tef > footer {
+  background: rgba(47, 79, 90, 1);
+  color: white;
+}
+
+.App.tef > main {
+  background-color: white;
+  color: rgba(47, 79, 90, 1);
+} 
+
+.App.tef > main > article, section {
+  background-color: white;
+  color: rgba(47, 79, 90, 1);
+} 
+
+.App.tef > main > nav {
+  background: white;
+  color: rgba(47, 79, 90, 1);
+}
+
+.App.tef.light > main > nav a {
+  color: #ffffff;
+}
+
+.App.tef.light > main > nav a:link {
+  background: white;
+  color: rgba(47, 79, 90, 1);
+}
+
+.App.tef.light > main > nav a:visited {
+  background: white;
+  color: #5DBEBB;
+}
+
+.App.tef.light > main > nav a:hover {
+  background: rgba(47, 79, 90, 1);
+  color: white;
+}
+
+.App.tef.light > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* dark */
+.App.tef.dark h1, .App.tef.dark h2, .App.tef.dark h3  {
+  color: rgba(242, 242, 242, 1);
+}
+
+.App.tef.dark > footer {
+  background: rgba(47, 79, 90, 1);
+  color: rgba(242, 242, 242, 1);
+}
+
+.App.tef.dark > main > article, section {
+  background: rgba(47, 79, 90, 1);
+  color: rgba(242, 242, 242, 1);
+} 
+
+.App.tef.dark > main > nav {
+  background: rgba(47, 79, 90, 1);
+}
+
+.App.tef.dark > main > nav a {
+  background: rgba(242, 242, 242, 1);
+  ;
+}
+
+.App.tef.dark > main > nav a:link {
+  background: rgba(47, 79, 90, 1);
+  color:rgba(242, 242, 242, 1);
+  ;
+}
+
+.App.tef.dark > main > nav a:visited {
+  background: rgba(47, 79, 90, 1);
+  color: rgba(242, 242, 242, 1);
+}
+
+.App.tef.dark > main > nav a:hover {
+  background: rgba(242, 242, 242, 1);
+
+  color: rgba(47, 79, 90, 1);
+}
+
+.App.tef.dark > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* radio bottons */
+.App.tef.light .md-radio input[type="radio"]:checked + label:before {
+  border-color: rgba(47, 79, 90, 1);
+  animation: ripple 0.2s linear forwards;
+}
+.App.tef.light .md-radio label:after {
+  background: rgba(47, 79, 90, 1);
+}
+.App.tef.light .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: rgba(47, 79, 90, 1);
+}
+
+.App.tef.dark .md-radio input[type="radio"]:checked + label:before {
+  border-color: rgba(242, 242, 242, 1);
+  animation: ripple-dark 0.2s linear forwards;
+}
+.App.tef.dark .md-radio label:after {
+  background: rgba(242, 242, 242, 1);
+}
+
+.App.tef.dark .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: rgba(242, 242, 242, 1);
+}
+

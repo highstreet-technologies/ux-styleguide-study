@@ -1,0 +1,289 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+ .App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App > header {
+  height: 55px;
+  border-bottom: #111111 solid 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.App > header > div {
+  margin: 5px;
+}
+
+.App > header .app-logo {
+  background-image: none;
+  margin: 0px;
+  height: 49px;
+}
+
+.App > header .app-name {
+  padding: 5px;
+  flex-grow: 1;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.App > header .app-name span {
+  padding: 5px;
+}
+
+.App > footer {
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.App > footer > div {
+  margin: 5px;
+}
+
+.App > main {
+  padding: 0px;
+  display:flex;
+  flex-grow: 1;
+  flex-direction: row;
+} 
+
+.App > main.right {
+  flex-direction: row-reverse;
+} 
+
+.App > main > article, section {
+  padding: 5px;
+  flex-grow: 1;
+} 
+
+.App > main > nav ul { 
+  list-style: none;
+  padding-left: 0px;
+}
+
+.App > main > nav li { 
+  text-align: left;
+  display: flex;
+}
+
+.App > main > nav li.small span, .App > main > nav li.small br { 
+  display:none;
+}
+
+.App > main > nav li.small, .App > main > nav li.medium { 
+  text-align: center;
+}
+
+.App > main > nav li.medium a { 
+  padding: 10px 0px;
+}
+
+.App > main > nav li.small i, .App > main > nav li.medium i { 
+  font-size: 24px;
+}
+
+.App > main > nav li.medium span { 
+  font-size: 12px;
+}
+
+.App > main > nav li.large br { 
+  display:none;
+}
+
+.App > main > nav a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 2px 0px;
+  padding: 0px 3px;
+  flex-grow: 1;
+}
+
+.App > main > nav a span {
+  padding: 3px 3px;
+  font-size: 16px;
+}
+
+.App > main > nav a i {
+  padding: 3px 3px;
+  font-size: 16px;
+}
+
+.App > main > nav a:link {
+  color: #111111;
+}
+
+.App > main > nav a:visited {
+  color: #666666;
+}
+
+.App > main > nav a:hover {
+  background: #eeeeee;
+  color: #666666;
+}
+
+.App > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+.App .flex-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.App .flex-container > div {
+  margin: 10px;
+}
+
+
+/* START MATERIAL DESIGN */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* RADIO BUTTONS */
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.0);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0);
+  }
+}
+.App .md-radio {
+  margin: 8px 0;
+}
+.App .md-radio.md-radio-inline {
+  display: inline-block;
+}
+.App .md-radio input[type="radio"] {
+  display: none;
+}
+.App .md-radio input[type="radio"]:checked + label:before {
+  border-color: #337ab7;
+  animation: ripple 0.2s linear forwards;
+}
+.App .md-radio input[type="radio"]:checked + label:after {
+  transform: scale(1);
+}
+.App .md-radio label {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  padding: 0 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+.App .md-radio label:before, .md-radio label:after {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transition-property: transform, border-color;
+}
+.App .md-radio label:before {
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+}
+.App .md-radio label:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  background: #337ab7;
+}
+
+/* CHECKBOXES */
+.App .md-checkbox {
+  position: relative;
+  margin: 1em 0;
+  text-align: left;
+}
+.App .md-checkbox.md-checkbox-inline {
+  display: inline-block;
+}
+.App .md-checkbox label {
+  cursor: pointer;
+  display: inline;
+  line-height: 1.25em;
+  vertical-align: top;
+  clear: both;
+  padding-left: 1px;
+}
+.App .md-checkbox label:not(:empty) {
+  padding-left: 0.75em;
+}
+.App .md-checkbox label:before, .md-checkbox label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.App .md-checkbox label:before {
+  width: 1.25em;
+  height: 1.25em;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  border-radius: 0.125em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.App .md-checkbox input[type="checkbox"] {
+  outline: 0;
+  visibility: hidden;
+  width: 1.25em;
+  margin: 0;
+  display: block;
+  float: left;
+  font-size: inherit;
+}
+.App .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #337ab7;
+  border: none;
+}
+.App .md-checkbox input[type="checkbox"]:checked + label:after {
+  transform: translate(0.25em, 0.33654em) rotate(-45deg);
+  width: 0.75em;
+  height: 0.375em;
+  border: 0.125em solid #fff;
+  border-top-style: none;
+  border-right-style: none;
+}
+.App .md-checkbox input[type="checkbox"]:disabled + label:before {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+.App .md-checkbox input[type="checkbox"]:disabled:checked + label:before {
+  background: rgba(0, 0, 0, 0.26);
+}
+

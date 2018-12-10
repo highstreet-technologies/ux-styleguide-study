@@ -1,0 +1,141 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+/* Open Network Automation Plattform onap */
+.App.karaf h1, .App.karaf h2, .App.karaf h3  {
+  color: #E72F53;
+}
+
+.App.karaf > header .app-logo {
+  background-image: url('http://karaf.apache.org/manual/latest-2.x/images/karaf-logo.png');
+  background-size: 182px 49px;
+  height: 49px;
+  width: 182px;
+}
+
+.App.karaf > header {
+  background: #ffffff;
+  color: #E72F53;
+  border-bottom: #E72F53 solid 5px;
+}
+
+.App.karaf > footer {
+  background: #343a40;
+  color: #E72F53;
+}
+
+.App.karaf > main {
+  background-color: #ffffff;
+  color: #313032;
+} 
+
+.App.karaf > main > article, section {
+  background-color: #ffffff;
+  color: #313032;
+} 
+
+.App.karaf > main > nav {
+  background: #ffffff;
+  color: #343a40;
+}
+
+.App.karaf.light > main > nav a {
+  color: #ffffff;
+}
+
+.App.karaf.light > main > nav a:link {
+  background: #ffffff;
+  color: #343a40;
+}
+
+.App.karaf.light > main > nav a:visited {
+  background: #ffffff;
+  color: #E72F53;
+}
+
+.App.karaf.light > main > nav a:hover {
+  background: #343a40;
+  color: #ffffff;
+}
+
+.App.karaf.light > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* dark */
+.App.karaf.dark > footer {
+  background: #313032;
+  color: #E72F53;
+}
+
+.App.karaf.dark > main > article, section {
+  background: #313032;
+  color: #ffffff;
+} 
+
+.App.karaf.dark > main > nav {
+  background: #313032;
+}
+
+.App.karaf.dark > main > nav a {
+  background: #ffffff;
+}
+
+.App.karaf.dark > main > nav a:link {
+  background: #313032;
+  color: #E72F53;
+}
+
+.App.karaf.dark > main > nav a:visited {
+  background: #313032;
+  color: #E72F53;
+}
+
+.App.karaf.dark > main > nav a:hover {
+  background: #ffffff;
+  color: #E72F53;
+}
+
+.App.karaf.dark > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* radio bottons */
+.App.karaf.light .md-radio input[type="radio"]:checked + label:before {
+  border-color: #E72F53;
+  animation: ripple 0.2s linear forwards;
+}
+.App.karaf.light .md-radio label:after {
+  background: #E72F53;
+}
+.App.karaf.light .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #E72F53;
+}
+
+.App.karaf.dark .md-radio input[type="radio"]:checked + label:before {
+  border-color: #E72F53;
+  animation: ripple-dark 0.2s linear forwards;
+}
+.App.karaf.dark .md-radio label:after {
+  background: #E72F53;
+}
+
+.App.karaf.dark .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #E72F53;
+}
+

@@ -1,0 +1,141 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+/* Open Network Automation Plattform onap */
+.App.onap h1, .App.onap h2, .App.onap h3  {
+  color: #07819B;
+}
+
+.App.onap > header .app-logo {
+  background-image: url('https://www.onap.org/wp-content/uploads/sites/20/2017/02/logo_onap_2017.png');
+  background-size: 229px 49px;
+  height: 49px;
+  width: 229px;
+}
+
+.App.onap > header {
+  background: white;
+  color: #07819B;
+  border-bottom: #07819B solid 5px;
+}
+
+.App.onap > footer {
+  background: #07819B;
+  color: white;
+}
+
+.App.onap > main {
+  background-color: white;
+  color: #313032;
+} 
+
+.App.onap > main > article, section {
+  background-color: white;
+  color: #313032;
+} 
+
+.App.onap > main > nav {
+  background: white;
+  color: #07819B;
+}
+
+.App.onap.light > main > nav a {
+  color: #ffffff;
+}
+
+.App.onap.light > main > nav a:link {
+  background: white;
+  color: #07819B;
+}
+
+.App.onap.light > main > nav a:visited {
+  background: white;
+  color: #5DBEBB;
+}
+
+.App.onap.light > main > nav a:hover {
+  background: #07819B;
+  color: white;
+}
+
+.App.onap.light > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* dark */
+.App.onap.dark > footer {
+  background: #313032;
+  color: #07819B;
+}
+
+.App.onap.dark > main > article, section {
+  background: #313032;
+  color: white;
+} 
+
+.App.onap.dark > main > nav {
+  background: #313032;
+}
+
+.App.onap.dark > main > nav a {
+  background: white;
+}
+
+.App.onap.dark > main > nav a:link {
+  background: #313032;
+  color: #07819B;
+}
+
+.App.onap.dark > main > nav a:visited {
+  background: #313032;
+  color: #5DBEBB;
+}
+
+.App.onap.dark > main > nav a:hover {
+  background: white;
+  color: #07819B;
+}
+
+.App.onap.dark > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* radio bottons */
+.App.onap.light .md-radio input[type="radio"]:checked + label:before {
+  border-color: #07819B;
+  animation: ripple 0.2s linear forwards;
+}
+.App.onap.light .md-radio label:after {
+  background: #07819B;
+}
+.App.onap.light .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #07819B;
+}
+
+.App.onap.dark .md-radio input[type="radio"]:checked + label:before {
+  border-color: #07819B;
+  animation: ripple-dark 0.2s linear forwards;
+}
+.App.onap.dark .md-radio label:after {
+  background: #07819B;
+}
+
+.App.onap.dark .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: #07819B;
+}
+

@@ -1,0 +1,141 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+/* Open Network Automation Plattform onap */
+.App.ht h1, .App.ht h2, .App.ht h3  {
+  color: rgba(0,153,204,1);
+}
+
+.App.ht > header .app-logo {
+  background-image: url('http://www.highstreet-technologies.com/wp-content/uploads/2016/10/logo-highstreet-technologies.svg');
+  background-size: 157px 49px;
+  height: 49px;
+  width: 157px;
+}
+
+.App.ht > header {
+  background: #ffffff;
+  color: #31A260;
+  border-bottom: #31A260 solid 1px;
+}
+
+.App.ht > footer {
+  background: #31A260;
+  color: #ffffff;
+}
+
+.App.ht > main {
+  background-color: #ffffff;
+  color: #313032;
+} 
+
+.App.ht > main > article, section {
+  background-color: #ffffff;
+  color: #313032;
+} 
+
+.App.ht > main > nav {
+  background: #ffffff;
+  color: rgba(0,153,204,1);
+}
+
+.App.ht.light > main > nav a {
+  color: #ffffff;
+}
+
+.App.ht.light > main > nav a:link {
+  background: #ffffff;
+  color: rgba(0,153,204,1);
+}
+
+.App.ht.light > main > nav a:visited {
+  background: #ffffff;
+  color: #5DBEBB;
+}
+
+.App.ht.light > main > nav a:hover {
+  background: rgba(0,153,204,1);
+  color: #ffffff;
+}
+
+.App.ht.light > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* dark */
+.App.ht.dark > footer {
+  background: #313032;
+  color: rgba(0,153,204,1);
+}
+
+.App.ht.dark > main > article, section {
+  background: #313032;
+  color: #ffffff;
+} 
+
+.App.ht.dark > main > nav {
+  background: #313032;
+}
+
+.App.ht.dark > main > nav a {
+  background: #ffffff;
+}
+
+.App.ht.dark > main > nav a:link {
+  background: #313032;
+  color: rgba(0,153,204,1);
+}
+
+.App.ht.dark > main > nav a:visited {
+  background: #313032;
+  color: #5DBEBB;
+}
+
+.App.ht.dark > main > nav a:hover {
+  background: #ffffff;
+  color: rgba(0,153,204,1);
+}
+
+.App.ht.dark > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* radio bottons */
+.App.ht.light .md-radio input[type="radio"]:checked + label:before {
+  border-color: rgba(0,153,204,1);
+  animation: ripple 0.2s linear forwards;
+}
+.App.ht.light .md-radio label:after {
+  background: rgba(0,153,204,1);
+}
+.App.ht.light .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: rgba(0,153,204,1);
+}
+
+.App.ht.dark .md-radio input[type="radio"]:checked + label:before {
+  border-color: rgba(0,153,204,1);
+  animation: ripple-dark 0.2s linear forwards;
+}
+.App.ht.dark .md-radio label:after {
+  background: rgba(0,153,204,1);
+}
+
+.App.ht.dark .md-checkbox input[type="checkbox"]:checked + label:before {
+  background: rgba(0,153,204,1);
+}
+

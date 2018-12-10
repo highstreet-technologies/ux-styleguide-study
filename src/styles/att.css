@@ -1,0 +1,145 @@
+/******************************************************************************
+ * Copyright 2018 highstreet-technologies GbmH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *****************************************************************************/
+
+/* Open Network Automation Plattform onap */
+.App.att h1, .App.att h2, .App.att h3  {
+  color:  rgba(0, 148, 211, 1);
+}
+
+.App.att .border-left {
+  border-left: rgba(0, 148, 211, 1) 1px solid;
+}
+
+.App.att > header .app-logo {
+  background-image: url('https://pmcvariety.files.wordpress.com/2016/04/att_logo.jpg?w=1000&h=563&crop=1');
+  background-size: 87px 49px;
+  height: 49px;
+  width: 87px;
+}
+
+.App.att > header {
+  background:  rgba(242, 242, 242, 1);
+  color:  rgba(0, 148, 211, 1);
+  border-bottom: rgba(0, 148, 211, 1) solid 5px;
+}
+
+.App.att > footer {
+  background:  rgba(0, 148, 211, 1);
+  color:  rgba(242, 242, 242, 1);
+}
+
+.App.att > main {
+  background-color:  rgba(242, 242, 242, 1);
+  color: #313032;
+} 
+
+.App.att > main > article, section {
+  background-color:  rgba(242, 242, 242, 1);
+  color: #313032;
+} 
+
+.App.att > main > nav {
+  background:  rgba(242, 242, 242, 1);
+  color:  rgba(0, 148, 211, 1);
+}
+
+.App.att.light > main > nav a {
+  color: # rgba(242, 242, 242, 1);
+}
+
+.App.att.light > main > nav a:link {
+  background:  rgba(242, 242, 242, 1);
+  color:  rgba(0, 148, 211, 1);
+}
+
+.App.att.light > main > nav a:visited {
+  background:  rgba(242, 242, 242, 1);
+  color: rgba(2, 165, 225, 1);
+}
+
+.App.att.light > main > nav a:hover {
+  background:  rgba(0, 148, 211, 1);
+  color:  rgba(242, 242, 242, 1);
+}
+
+.App.att.light > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* dark */
+.App.att.dark > footer {
+  background: #313032;
+  color:  rgba(0, 148, 211, 1);
+}
+
+.App.att.dark > main > article, section {
+  background: #313032;
+  color:  rgba(242, 242, 242, 1);
+} 
+
+.App.att.dark > main > nav {
+  background: #313032;
+}
+
+.App.att.dark > main > nav a {
+  background:  rgba(242, 242, 242, 1);
+}
+
+.App.att.dark > main > nav a:link {
+  background: #313032;
+  color:  rgba(0, 148, 211, 1);
+}
+
+.App.att.dark > main > nav a:visited {
+  background: #313032;
+  color: rgba(2, 165, 225, 1);
+}
+
+.App.att.dark > main > nav a:hover {
+  background:  rgba(242, 242, 242, 1);
+  color:  rgba(0, 148, 211, 1);
+}
+
+.App.att.dark > main > nav a:active {
+  background: lightskyblue;
+  color: blue;
+}
+
+/* radio bottons */
+.App.att.light .md-radio input[type="radio"]:checked + label:before {
+  border-color:  rgba(0, 148, 211, 1);
+  animation: ripple 0.2s linear forwards;
+}
+.App.att.light .md-radio label:after {
+  background:  rgba(0, 148, 211, 1);
+}
+.App.att.light .md-checkbox input[type="checkbox"]:checked + label:before {
+  background:  rgba(0, 148, 211, 1);
+}
+
+.App.att.dark .md-radio input[type="radio"]:checked + label:before {
+  border-color:  rgba(0, 148, 211, 1);
+  animation: ripple-dark 0.2s linear forwards;
+}
+.App.att.dark .md-radio label:after {
+  background:  rgba(0, 148, 211, 1);
+}
+
+.App.att.dark .md-checkbox input[type="checkbox"]:checked + label:before {
+  background:  rgba(0, 148, 211, 1);
+}
+
