@@ -123,8 +123,11 @@ class App extends React.Component<any, any> {
       selectedBrightness: this.brightness[0],
       selectedNavStyle: this.navStyle[2],
       selectedNavPosition: this.navPosition[0],
-      showFrame: true
+      showFrame: true,
+      windowWidth: 0,
+      windowHeight: 0
     };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   // Handlers
@@ -143,16 +146,48 @@ class App extends React.Component<any, any> {
   handleShowOnChange = () => {
     this.setState({ showFrame: !this.state.showFrame });
   };
+  handleMenuOnClick = () => {
+    if (this.state.selectedNavStyle !== 'none') {
+      this.setState({ selectedNavStyle: 'none' });
+    } else {
+      this.setState({ selectedNavStyle: this.navStyle[2] });
+    }
+  };
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  };
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  };
+  updateWindowDimensions() {
+    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight });
+
+    if (this.state.windowWidth < this.state.windowHeight && this.state.selectedNavStyle !== 'none') {
+      this.setState({ selectedNavStyle: 'none' });
+    } else if (this.state.windowWidth > this.state.windowHeight && this.state.selectedNavStyle === 'none') {
+      this.setState({ selectedNavStyle: this.navStyle[2] });
+    }
+
+  };
 
   public render() {
 
     let header;
     let footer;
     let nav;
+    let logo;
+
+    if (this.state.windowWidth > this.state.windowHeight) {
+      logo = <div className="app-logo"></div>;
+    }
 
     if (this.state.showFrame) {
       header = <header>
-        <div className="app-logo"></div>
+        <div className="app-menu" onClick={this.handleMenuOnClick}>
+          <i className="fas fa-bars"></i>
+        </div>
+        {logo}
         <div className="app-name">
           <i className="fas fa-plug"></i>
           <span>Connect</span>
@@ -163,7 +198,7 @@ class App extends React.Component<any, any> {
           <span>user@email.io</span>
         </div>
       </header>;
-      
+
       footer = <footer>
         <div>ux-frame</div>
         <div>Version: 0.0.0</div>
@@ -175,7 +210,7 @@ class App extends React.Component<any, any> {
           {this.nav.map((item, index) => {
             return (
               <li key={index} className={this.state.selectedNavStyle}>
-                <a href={'#/' + item.name.toLowerCase()}><i className={item.iconClassName}></i><br/><span>{item.name}</span></a>
+                <a href={'#/' + item.name.toLowerCase()}><i className={item.iconClassName}></i><br /><span>{item.name}</span></a>
               </li>
             );
           })}
@@ -257,14 +292,15 @@ class App extends React.Component<any, any> {
               </div>
 
 
-            <div className="border-left">
-              <h2>Your selection</h2>
-              <p><span>Design: </span><b>{selectedDesignItem.name}</b></p>
-              <img src={selectedDesignItem.logo} title={selectedDesignItem.name} alt={selectedDesignItem.name} height="49px" />
-              <p><span>Brightness: </span><b>{this.state.selectedBrightness}</b></p>
-              <p><span>Navigation: </span><b>{this.state.selectedNavStyle}</b><span>, </span><b>{this.state.selectedNavPosition}</b></p>
-              <p><span>Show frame: </span><b>{String(this.state.showFrame)}</b></p>
-            </div>
+              <div className="border-left">
+                <h2>Your selection</h2>
+                <p><span>Design: </span><b>{selectedDesignItem.name}</b></p>
+                <img src={selectedDesignItem.logo} title={selectedDesignItem.name} alt={selectedDesignItem.name} height="49px" />
+                <p><span>Brightness: </span><b>{this.state.selectedBrightness}</b></p>
+                <p><span>Navigation: </span><b>{this.state.selectedNavStyle}</b><span>, </span><b>{this.state.selectedNavPosition}</b></p>
+                <p><span>Show frame: </span><b>{String(this.state.showFrame)}</b></p>
+                <p><span>Window dimention: </span><b>{String(this.state.windowWidth)}px x {String(this.state.windowWidth)}px</b></p>
+              </div>
 
             </div>
           </article>

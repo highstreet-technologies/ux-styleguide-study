@@ -29,7 +29,7 @@
 .App.onap > header {
   background: white;
   color: #07819B;
-  border-bottom: #07819B solid 5px;
+  border-bottom: #07819B solid 2px;
 }
 
 .App.onap > footer {

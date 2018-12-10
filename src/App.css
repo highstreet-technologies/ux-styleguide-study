@@ -22,14 +22,19 @@
 
 .App > header {
   height: 55px;
-  border-bottom: #111111 solid 5px;
+  border-bottom: #111111 solid 2px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
 .App > header > div {
   margin: 5px;
+}
+
+.App > header .app-menu {
+  margin: 0px 15px;
+  cursor: pointer;
 }
 
 .App > header .app-logo {
