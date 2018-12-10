@@ -299,7 +299,7 @@ class App extends React.Component<any, any> {
                 <p><span>Brightness: </span><b>{this.state.selectedBrightness}</b></p>
                 <p><span>Navigation: </span><b>{this.state.selectedNavStyle}</b><span>, </span><b>{this.state.selectedNavPosition}</b></p>
                 <p><span>Show frame: </span><b>{String(this.state.showFrame)}</b></p>
-                <p><span>Window dimention: </span><b>{String(this.state.windowWidth)}px x {String(this.state.windowWidth)}px</b></p>
+                <p><span>Window dimention: </span><b>{String(this.state.windowWidth)}px x {String(this.state.windowHeight)}px</b></p>
               </div>
 
             </div>
